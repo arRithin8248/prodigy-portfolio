@@ -1,0 +1,49 @@
+/* style.css - small custom styles */
+:root{
+  --primary: #0d6efd;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: #f8f9fa;
+}
+
+/* profile image sizing */
+.profile-pic img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 6px solid #fff;
+}
+
+.profile-lg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid #fff;
+}
+
+/* helper for card images */
+.object-cover {
+  object-fit: cover;
+}
+
+/* small responsive fixes */
+@media (max-width: 767px){
+  .profile-pic img { width: 120px; height: 120px; }
+  .profile-lg { width: 160px; height: 160px; }
+}
+/* Make footer stick to bottom when content is short */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
